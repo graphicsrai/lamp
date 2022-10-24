@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+ background-color: #1C1E26;
+}
+.mainnav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left .menu img{
+    width: 23px;
+    margin-right: 10px;
+}
+.left .logo img{
+    width: 125px;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.right ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+}
+.right ul li:hover{
+    color: #008770;
+}
+.navbutton .outer{
+    height: 20px;
+    width: 40px;
+    background-color: #008770;
+    border-radius: 20px;
+    border: 1px solid #008770;
+    box-shadow:  2px 3px 4px black inset;
+    position: relative;
+
+}
+ .navbutton .inner{
+    position: absolute;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #989999;
+    cursor: pointer;
+    box-shadow:  2px 2px 4px rgba(19, 18, 18, 0.884);
+    transition: 300ms;
+    color: #989999;
+} 
+/* .inner2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #989999;
+    cursor: pointer;
+    box-shadow:  2px 2px 4px rgba(19, 18, 18, 0.884);
+    transition: 300ms;
+    color: #989999;
+}
+.inner3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #989999;
+    cursor: pointer;
+    box-shadow:  2px 2px 4px rgba(19, 18, 18, 0.884);
+    transition: 300ms;
+    color: #989999;
+} */
+.hero{
+    display: flex;
+    justify-content:space-evenly;
+    color: #fff;
+    
+}
+.left1{
+    width: 50%;
+    height: 550px;
+    /* background-color: #989999; */
+    position: relative;
+}
+.left1 .lamp{
+    z-index: 1000;
+}
+.left1 .lamp img{
+    position: absolute;
+    top: -59px;
+    left:160px;
+    width: 150px;
+    z-index: 1000;
+}
+.light img{
+    position: absolute;
+    top: 215px;
+    right: 205px;
+    width: 501px;
+    transition: 600ms;
+}
+/* .light img:hover{
+    opacity: 0;
+} */
+.right1{
+    /* background-color: #989999; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right1 .msg h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.right1 button{
+    margin-top: 15px;
+    width: 180px;
+    height: 35px;
+    border-radius: 15px;
+    border-style: none;
+    color: #fff;
+    background-color: #008770;
+}
+.right1 button:hover{
+    background-color: #016352;
+    cursor: pointer;
+}

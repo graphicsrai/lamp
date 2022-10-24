@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vue Lamp</title>
+</head>
+<body>
+    <div class="mainnav">
+        <div class="left">
+        <div class="menu"><img src="./images/menu.png" alt=""></div>
+        <div class="logo"><img src="./images/logo.png" alt=""></div>
+        </div>
+        <div class="right">
+        <div class="navitems">
+            <ul>
+                <li>Latest</li>
+                <li>Modern</li>
+                <li>Contemporary</li>
+                <li>Affordable</li>
+            </ul>
+        </div>
+        <div class="navbutton">
+            <div class="outer">
+                <div class="inner inner2 " id="btn" onclick="swipe()">0</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="hero">
+        <div class="left1">
+            <div class="lamp">
+                <img src="./images/lamp.png">
+            </div>
+            <div class="light">
+                <img id="light" src="./images/light.png" alt="">
+            </div>
+        </div>
+        <div class="right1">
+            <div class="msg">
+                <h1>Future</h1> 
+                    <h1>Enlightenment</h1>
+                <p>This is the light of knowledge. i am wishing every one to enlighten up your life.</p>
+            </div>
+            <button>Check All Collections</button>
+            <!-- <button id="button" onclick="turn()">On</button> -->
+        </div>
+    </section>
+
+<script>
+    
+    let count=0;
+    function swipe()
+    {
+
+        // let change= document.getElementById('btn')
+        // // change.className="inner2"
+        // if(change.className=="inner2")
+        // {
+        //     change.className="inner3"
+        // }
+        // else{
+        //     change.className="inner2"
+        // }
+       
+        // console.log(change.className)        
+
+        
+
+    /* orignal code*/
+        let change= document.getElementById('btn').innerText
+        let light=document.getElementById("light")
+        if(change=="0")
+        {
+            console.log(change)
+            // document.getElementById('btn').style.right=0
+            document.getElementById('btn').style.marginLeft="20px"
+            document.getElementById('btn').innerText="1"
+            // document.getElementById('btn').innerText.
+            light.style.opacity="0"
+            
+        }
+        else{
+            console.log(change)
+            document.getElementById('btn').style.marginLeft="0"
+            // document.getElementById('btn').style.left=0
+            document.getElementById('btn').innerText="0"
+            light.style.opacity="100%"
+        }
+        
+    }
+    
+
+    function turn()
+    {   let light=document.getElementById("light")
+        let button=document.getElementById("button").innerText
+        if(button=="On"){
+            
+            light.style.opacity="0";
+            document.getElementById("button").innerText="Off"
+           
+        }
+        else
+        {
+            light.style.opacity="100%";
+            document.getElementById("button").innerText="On"
+        }
+    }
+  
+</script>
+</body>
+</html>
